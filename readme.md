@@ -39,4 +39,7 @@ function accomOptions() {
 ![Home page](/img/ap-hoepage.jpg)
 
 ### Production Tools
-Plugins used for this project:
+* Plugins used for this project:
+** fullpage.js
+** mapbox
+** jQuery
