@@ -36,10 +36,10 @@ function accomOptions() {
   }
   accomOptions();
 ```
-![Home page](/img/ap-hoepage.jpg)
+![Home page](/img/ap-homepage.jpg)
 
 ### Production Tools
-* Plugins used for this project:
-** fullpage.js
-** mapbox
-** jQuery
+Plugins used for this project:
+* fullpage.js
+* mapbox
+* jQuery
