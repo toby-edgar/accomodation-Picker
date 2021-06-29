@@ -1,0 +1,655 @@
+// Custom sass ..
+//  Custom colors
+$black: #2A2B2E;
+$lightGrey: #7E828B;
+$green: #5D976C;
+$blue: #4A81B7;
+$red: #E76A57;
+$background: #E5E5E5; // ----------------------------------------
+
+body {
+	font-family: 'Comfortaa', cursive;
+	background-color: $background;
+}
+
+h1 {
+	font-size: 62px;
+	font-weight: 200;
+	color: $black;
+}
+
+h2 {
+	font-size: 42px;
+	color: $black;
+	font-weight: 400;
+}
+
+h3 {
+	font-size: 32px;
+	color: $black;
+	font-weight: 200;
+}
+
+h4 {
+	font-size: 22px;
+	color: $black;
+	font-weight: 200;
+}
+
+h5 {
+	font-size: 22px;
+	color: $lightGrey;
+	font-weight: 200;
+}
+
+h6 {
+	font-size: 22px;
+	color: $green;
+	font-weight: 200;
+}
+
+p {
+	font-size: 18px;
+	color: $green;
+}
+
+.green-text {
+	color: $green;
+}
+//  BUTTONS ----------------------------------------
+
+button {
+	font-family: 'Comfortaa', cursive;
+	font-size: 20px;
+	border-radius: 60px;
+	transition: 0.5s ease;
+	cursor: pointer;
+}
+
+.continue-btn {
+	position: relative;
+	float: right;
+	margin-right: 200px;
+	top: 10%;
+
+	p {
+		font-size: 12px;
+		color: $red;
+	}
+}
+
+.continue {
+	border: 2px solid $green;
+	color: $green;
+	padding: 0.7em 2em;
+	background: none;
+	font-weight: 600;
+
+	&:hover {
+		color: $background;
+		background: $green;
+	}
+}
+
+
+.refresh {
+	border: 2px solid $blue;
+	color: $blue;
+	padding: 0.7em 2em;
+	background: none;
+	font-weight: 600;
+	margin-right: 1em;
+
+	&:hover {
+		color: $background;
+		background: $blue;
+	}
+}
+
+.learn-more {
+	border: 0.5px solid $lightGrey;
+	color: $lightGrey;
+	padding: 0.7em 2em;
+	background: none;
+	font-weight: 200;
+	margin-right: 2em;
+
+	&:hover {
+		color: $black;
+		border: 0.5px solid $black;
+	}
+}
+
+.back-button {
+	border: 0.5px solid $lightGrey;
+	border-radius: 60px;
+	color: $lightGrey;
+	background: none;
+	height: 60px;
+	width: 60px;
+
+	&:hover {
+		color: $black;
+		border: 0.5px solid $black;
+	}
+}
+
+.wrapper {
+	display: flex;
+	flex-wrap: wrap;
+	height: 100%;
+	width: 100%;
+}
+// Sections ****************************
+
+.section-content {
+	margin-top: 70px;
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+
+	.learn-more {
+		padding: 0.8em 1em;
+	}
+
+	.learn-more-text {
+		width: 50%;
+		margin: 7% auto 0;
+	}
+
+	.section-text {
+		width: 70%;
+		margin: 10% auto 0;
+	}
+}
+
+.break {
+	margin-right: 250px;
+	margin-bottom: 20px;
+}
+// Home section BEGINS *****************************
+
+.nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 5em;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 4em;
+	// border: 1px solid black;
+	img {
+		height: 180px;
+	}
+}
+
+.slide-one-content {
+	height: 30em;
+	width: 65%;
+	margin-left: auto;
+	margin-right: auto;
+	// border: 1px solid black;
+}
+// First slide *********************************
+// home page
+
+.slogan {
+	width: 80%;
+}
+// Second slide **************************
+// # ppl, # nights, date
+
+.section-content {
+	.scnd-slide-text {
+		display: flex;
+		flex-wrap: wrap;
+	}
+}
+
+.date,
+.nights,
+.people {
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: -40px;
+}
+
+.nights-counter,
+.people-counter {
+	margin: 0 30px;
+	font-family: 'Comfortaa', cursive;
+	display: flex;
+	align-items: center;
+
+	.minus,
+	.plus {
+		border: 0.5px solid $lightGrey;
+		border-radius: 60px;
+		color: $black;
+		background: none;
+		height: 60px;
+		width: 60px;
+	}
+
+	.nights-number,
+	.people-number {
+		margin: 0 40px;
+		font-size: 32px;
+		color: $green;
+	}
+}
+
+.date-picker {
+	margin-left: 20px;
+	font-family: 'Comfortaa', cursive;
+	cursor: pointer;
+	background: none;
+	color: $green;
+	font-size: 22px;
+	margin-top: 30px;
+	border: 0.5px solid $lightGrey;
+	border-radius: 60px;
+	width: 220px;
+	height: 60px;
+	padding: 0 20px;
+}
+// Third slide ****************************
+// Location, keywords
+
+.location {
+	margin-top: -40px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	.selectdiv {
+		h4 {
+			color: $black;
+			font-size: 22px;
+			right: -200px;
+			top: 18px;
+			padding: 0 0 2px;
+			position: relative;
+			pointer-events: none;
+		}
+
+		select {
+			position: relative;
+			margin-left:20px;
+			top: -55px;
+			border: 0.5px solid $lightGrey;
+			border-radius: 60px;
+			width: 220px;
+			height: 60px;
+			padding: 0 20px;
+			background: none;
+			color: $green;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			cursor: pointer;
+			font-size: 22px;
+			font-family: 'Comfortaa', cursive;
+		}
+	}
+}
+
+.keywords {
+	margin-bottom: 30px;
+}
+
+.keyword-btn {
+	border: 1px solid $lightGrey;
+	color: $lightGrey;
+	width: 120px;
+	height: 40px;
+	width: 120px;
+	text-align: center;
+	background: none;
+	font-size: 16px;
+	font-weight: 300;
+	margin-right: 2em;
+	margin-bottom: 1em;
+
+	&:hover {
+		color: $green;
+		border: 1px solid $green;
+	}
+}
+// Fourth slide ********************************
+// Accom and Meal selection
+
+.fourth-slide-text {
+	.continue-btn {
+		float: right;
+		margin-right: 0;
+
+		p {
+			font-size: 12px;
+			color: $red;
+		}
+	}
+}
+
+.accom-types {
+	display: flex;
+}
+
+.accom-selection {
+	border: 0.5px solid $lightGrey;
+	color: $black;
+	text-align: center;
+	width: 180px;
+	height: 60px;
+	padding: 0 20px;
+	background: none;
+	font-size: 22px;
+	font-weight: 200;
+	margin-left: 2em;
+	margin-top: 0.9em;
+
+	&:hover {
+		color: $green;
+		border: 1px solid $green;
+	}
+}
+
+
+.hide {
+	display: none;
+}
+
+.meal-selection {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+.check-btn {
+	border: 1px solid $lightGrey;
+	color: $black;
+	height: 60px;
+	width: 60px;
+	background: none;
+	font-size: 22px;
+	font-weight: 200;
+	margin-left: 2em;
+	margin-top: 1em;
+}
+
+.tick:hover {
+	color: $green;
+	border: 1px solid $green;
+}
+
+.cross:hover {
+	color: $red;
+	border: 1px solid $red;
+}
+
+.meal-options {
+	display: flex;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-items: center;
+
+	h4 {
+		width:100%
+	}
+}
+
+.meal-btn {
+	border: 0.5px solid $lightGrey;
+	color: $black;
+	background: none;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 50px;
+	margin-right: 1em;
+	font-weight: 200;
+	font-size: 18px;
+
+	&:hover {
+		color: $green;
+		border: 0.5px solid $green;
+	}
+}
+
+.no-meal {
+	border: 0.5px solid $lightGrey;
+	color: $black;
+	background: none;
+	justify-content: center;
+	align-items: center;
+	width: 150px;
+	height: 50px;
+	margin-right: 1em;
+	font-weight: 200;
+	font-size: 18px;
+
+	&:hover {
+		color: $red;
+		border: 1px solid $red;
+	}
+}
+
+// Fifth Slide *****************************
+// Acom generation & Refresh
+
+.generator-content {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 40px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+
+	.generator-left,
+	.generator-right {
+		width: 45%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.details-section {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 70px;
+	width: 70%;
+	margin-left: auto;
+	margin-right: auto;
+
+	.generator-left,
+	.generator-right {
+		width: 45%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+h5 {
+	margin-top: -30px;
+}
+
+.map {
+	border: 0.5px solid $green;
+	border-radius: 10px;
+	height: 300px;
+	width: 90%;
+	margin-top: 60px;
+	margin-bottom: 70px;
+}
+
+.accom-image {
+	height: 600px;
+	width: 100%;
+	border-radius: 60px;
+	margin-bottom: 30px;
+}
+// Sixth Slide ***************************
+// Accomodation info
+// Using same layout as previous slide
+
+.included-items {
+	display: flex;
+	flex-wrap: wrap;
+	width: 60%;
+	margin-top: 50px;
+
+	h3 {
+		margin-bottom: 50px;
+	}
+
+	h5 {
+		margin-right: 40px;
+		margin-bottom: 35px;
+	}
+}
+
+.bottom-section {
+	display: flex;
+	justify-content: space-between;
+}
+
+.date-price {
+	width: 59%;
+	margin-top: 50px;
+
+	.date {
+		margin-bottom: 50px;
+	}
+
+	.total-price {
+		margin-top: 110px;
+		margin-bottom: -20px;
+	}
+
+	h1 {
+		color: $blue;
+	}
+}
+
+.book-now {
+	width: 40%;
+	margin-top: 30px;
+}
+
+.book-now-btn {
+	border: 2px solid $green;
+	color: $background;
+	background-color: $green;
+	padding: 0.7em 2em;
+	font-weight: 600;
+	margin-top: 150px;
+	margin-bottom: 15px;
+
+	&:hover {
+		color: $green;
+		background: none;
+		color: $green;
+	}
+}
+
+.start-over-btn {
+	border: 0.5px solid $lightGrey;
+	color: $lightGrey;
+	background: none;
+	padding: 0.7em 2em;
+	background: none;
+	font-weight: 200;
+
+	&:hover {
+		color: $black;
+	}
+}
+//  clicked
+
+.check {
+	color: $green;
+	border: 1px solid $green;
+}
+
+.crossed {
+	color: $red;
+	border: 1px solid $red;
+}
+
+.clicked {
+	color: $green;
+	border: 1px solid $green;
+}
+//  Webkits ----------------------------
+
+.shake-horizontal {
+	-webkit-animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+	animation: shake-horizontal 0.8s cubic-bezier(0.455, 0.030, 0.515, 0.955) both;
+}
+@-webkit-keyframes shake-horizontal {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+
+	80% {
+		-webkit-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+
+	90% {
+		-webkit-transform: translateX(-8px);
+		transform: translateX(-8px);
+	}
+}
+@keyframes shake-horizontal {
+	0%,
+	100% {
+		-webkit-transform: translateX(0);
+		transform: translateX(0);
+	}
+
+	10%,
+	30%,
+	50%,
+	70% {
+		-webkit-transform: translateX(-10px);
+		transform: translateX(-10px);
+	}
+
+	20%,
+	40%,
+	60% {
+		-webkit-transform: translateX(10px);
+		transform: translateX(10px);
+	}
+
+	80% {
+		-webkit-transform: translateX(8px);
+		transform: translateX(8px);
+	}
+
+	90% {
+		-webkit-transform: translateX(-8px);
+		transform: translateX(-8px);
+	}
+}
