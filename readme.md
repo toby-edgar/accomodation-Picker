@@ -1,9 +1,7 @@
 # Accomodation Picker for Tourism New Zealand
 Tourism New Zealand is the organisation responsible for marketing New Zealand to the world as a tourist destination. NZ Tourisms’ marketing activity is strategically focused on a number of key markets around the world and a select group of consumers within those key markets. This is so we get the maximum yield for the tourism industry.
 
-Accomodation Picker is a web app that is designed to find an accomodation selection for users who may not have the knowlege to search for thier own accomodation within Aotearoa.
-
-The App takes the user through a friendly, personable and trusted questionnaire and asks them about their desired accommodation in Aotearoa and return them with a hand-picked accommodation deal.
+Accomodation Picker is a web app that is designed to find an accomodation selection for users who may not have the knowlege to search for thier own accomodation within Aotearoa. The App takes the user through a friendly, personable and trusted questionnaire and asks them about their desired accommodation in Aotearoa and return them with a hand-picked accommodation deal.
 
 *HTML and CSS3 has been validated with the W3S markup validation service.* <br>
 *Javascript linting done through gulp.*
@@ -36,7 +34,7 @@ function accomOptions() {
   }
   accomOptions();
 ```
-![Home page](img/ap-homepage.jpg)
+![Home page](img/ap-homepage.png)
 
 ### Production Tools
 * fullpage.js
