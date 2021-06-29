@@ -36,4 +36,7 @@ function accomOptions() {
   }
   accomOptions();
 ```
-![Home page](img/ap-hoepage.jpg)
+![Home page](/img/ap-hoepage.jpg)
+
+### Production Tools
+Plugins used for this project:
