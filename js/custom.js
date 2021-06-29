@@ -1,19 +1,15 @@
 (function() {
   // fullpage.js SET UP
   $('#fullpage').fullpage({
-    //Navigation
-    // navigation: true,
-    // navigationPosition: 'right',
-    // slidesNavigation: true,
     menu: '#menu',
     lockAnchors: true,
     anchors: ['firstPage', 'secondPage'],
     showActiveTooltip: true,
-    dragAndMove: true,
+    dragAndMove: false,
     autoScrolling: true,
     scrollHorizontally: true,
     controlArrows: false,
-    keyboardScrolling: true,
+    keyboardScrolling: false,
     loopHorizontal: false,
     horizontalCentered: false,
     scrollingSpeed: 100,
@@ -128,9 +124,6 @@
   // error if no accom options avaiable w selection
   function accomError() {
     if (peopleNumber < 2 && nightsNumber > 10) {
-      // button shake when error
-      // $('#submitOne').addClass('shake-horizontal');
-      // alert when error
       alert('Max nights for 1 person is 10!');
     } else {}
   }
@@ -167,19 +160,17 @@
   // Slide Two BEGINS ******************************
   // Location and Keywords
 
-  // 1. find value of location input
+  // find value of location input
   var getLocation = document.getElementById('locations');
 
 
-  // 2. keywords stay green once clicked
+  // keywords stay green once clicked
   $('.keyword-btn').click(function() {
     $(this).toggleClass('clicked');
   });
-  // 3. find value of Keywords
-  // ***
 
 
-  // 4. continue button slides to next page
+  // continue button slides to next page
   $('#submitTwo').click(function() {
     $.fn.fullpage.moveSlideRight();
     accomOptions();
@@ -1235,6 +1226,10 @@
     hideShow();
   });
 
+  // book now button
+  $('#bookNowBtn').click(function() {
+    alert('XD')
+  });
 
 }());
 // IIFE ENDS
