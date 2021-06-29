@@ -37,6 +37,6 @@ function accomOptions() {
 ![Home page](img/ap-homepage.png)
 
 ### Production Tools
+* jQuery
 * fullpage.js
 * mapbox
-* jQuery

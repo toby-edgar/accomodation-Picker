@@ -47,7 +47,7 @@
   });
 
   // Move page left
-  $('#btnLeft, #btnLeftTwo, #btnLeftThree, #buttonLeftFour').click(function() {
+  $('#btnLeft, #btnLeftTwo, #btnLeftThree, #btnLeftFour').click(function() {
     $.fn.fullpage.moveSlideLeft();
     hideShow();
   });
