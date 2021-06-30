@@ -49,7 +49,7 @@ $background: #E5E5E5;
 I have followed the principles of the [Idiomatic](https://github.com/rwaldron/idiomatic.js/) style guide to help writing consistant and clean javascript.
 
 
-``` snip
+``` Javascript
 var hotel = document.getElementById('hotel');
 var motel = document.getElementById('motel');
 var hostel = document.getElementById('hostel');
