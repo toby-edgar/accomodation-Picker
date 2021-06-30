@@ -6,6 +6,16 @@ Accomodation Picker is a web app that is designed to find an accomodation select
 *HTML and CSS3 has been validated with the W3S markup validation service.* <br>
 *Javascript linting done through gulp.*
 
+<hr>
+
+### Production Tools
+
+#### SCSS
+![scss](img/scss-one.png)
+![scss](img/scss-two.png)
+
+#### Gulp
+
 ### Style guide
 I have followed the principles of the [Idiomatic](https://github.com/rwaldron/idiomatic.js/) style guide to help writing consistant javascript.
 
@@ -36,7 +46,7 @@ function accomOptions() {
 ```
 ![Home page](img/ap-homepage.png)
 
-### Production Tools
+### Plugins & API
 * jQuery
 * fullpage.js
 * mapbox

@@ -546,9 +546,7 @@ h5 {
 	margin-bottom: 15px;
 
 	&:hover {
-		color: $green;
-		background: none;
-		color: $green;
+		box-shadow: 5px 10px #888888;
 	}
 }
 
