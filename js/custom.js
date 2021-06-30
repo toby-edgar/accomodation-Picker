@@ -1228,7 +1228,7 @@
 
   // book now button
   $('#bookNowBtn').click(function() {
-    alert('XD')
+    alert('XD');
   });
 
 }());

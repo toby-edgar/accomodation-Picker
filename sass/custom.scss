@@ -88,6 +88,7 @@ button {
 	&:hover {
 		color: $background;
 		background: $green;
+		box-shadow: 0 0 10px $lightGrey;
 	}
 }
 
@@ -102,6 +103,7 @@ button {
 	&:hover {
 		color: $background;
 		background: $blue;
+		box-shadow: 0 0 10px $lightGrey;
 	}
 }
 
@@ -115,7 +117,7 @@ button {
 
 	&:hover {
 		color: $black;
-		border: 0.5px solid $black;
+		box-shadow: 0 0 10px $lightGrey;
 	}
 }
 
@@ -129,7 +131,7 @@ button {
 
 	&:hover {
 		color: $black;
-		border: 0.5px solid $black;
+		box-shadow: 0 0 10px $lightGrey;
 	}
 }
 
@@ -546,7 +548,7 @@ h5 {
 	margin-bottom: 15px;
 
 	&:hover {
-		box-shadow: 5px 10px #888888;
+		box-shadow: 0 0 10px $green;
 	}
 }
 
@@ -560,19 +562,10 @@ h5 {
 
 	&:hover {
 		color: $black;
+		box-shadow: 0 0 10px $lightGrey;
 	}
 }
 //  clicked
-
-.check {
-	color: $green;
-	border: 1px solid $green;
-}
-
-.crossed {
-	color: $red;
-	border: 1px solid $red;
-}
 
 .clicked {
 	color: $green;

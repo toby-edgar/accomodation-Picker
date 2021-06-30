@@ -7,10 +7,13 @@ Accomodation Picker is a web app that is designed to find an accomodation select
 *Javascript linting done through gulp.*:white_check_mark:
 
 <hr>
+
 ![Home page](img/ap-homepage.png)
+
 <hr>
 
-### Production Tools
+#### Gulp
+Gulp was used through the whole process of creating this application. This allowed for Javascript linting keeping me on top of errors that occurred during the process. It also helped me keep my Javascript code clean, clear and to an industry standard.
 
 #### SCSS
 ``` scss
@@ -42,7 +45,7 @@ $background: #E5E5E5;
 }
 ```
 
-### Javascript
+#### Javascript
 I have followed the principles of the [Idiomatic](https://github.com/rwaldron/idiomatic.js/) style guide to help writing consistant and clean javascript.
 
 
@@ -71,9 +74,9 @@ function accomOptions() {
   accomOptions();
 ```
 
-### Plugins & API
+#### Plugins & API
 * jQuery
-``` scss
+``` javascript
 $('#lunch').toggle(function() {
   $('#noMeals').removeClass('crossed');
   $(this).addClass('clicked');
@@ -82,7 +85,7 @@ $('#lunch').toggle(function() {
 });
 ```
 * fullpage.js
-``` scss
+``` javascript
 $('#fullpage').fullpage({
   menu: '#menu',
   lockAnchors: true,
@@ -100,7 +103,7 @@ $('#fullpage').fullpage({
 });
 ```
 * mapbox
-``` scss
+``` javascript
 var map = new mapboxgl.Map({
   container: 'map', // container id
   style: 'mapbox://styles/mapbox/streets-v11', // style URL
