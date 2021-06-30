@@ -413,7 +413,7 @@
             174.088046, -35.278908
           ],
           zoom: 13,
-          essential: true // this animation is considered essential with respect to prefers-reduced-motion
+          essential: true
         });
 
       } else if (randomHotelNorth === 'Kokohuia') {

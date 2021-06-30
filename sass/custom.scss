@@ -88,7 +88,7 @@ button {
 	&:hover {
 		color: $background;
 		background: $green;
-		box-shadow: 0 0 10px $lightGrey;
+		box-shadow: 0 0 3px $lightGrey;
 	}
 }
 
@@ -103,7 +103,7 @@ button {
 	&:hover {
 		color: $background;
 		background: $blue;
-		box-shadow: 0 0 10px $lightGrey;
+		box-shadow: 0 0 3px $lightGrey;
 	}
 }
 
@@ -117,7 +117,7 @@ button {
 
 	&:hover {
 		color: $black;
-		box-shadow: 0 0 10px $lightGrey;
+		box-shadow: 0 0 3px $lightGrey;
 	}
 }
 
@@ -129,9 +129,10 @@ button {
 	height: 60px;
 	width: 60px;
 
+
 	&:hover {
 		color: $black;
-		box-shadow: 0 0 10px $lightGrey;
+		box-shadow: 0 0 3px $lightGrey;
 	}
 }
 
@@ -225,12 +226,19 @@ button {
 
 	.minus,
 	.plus {
-		border: 0.5px solid $lightGrey;
+		// border: 0.5px solid $lightGrey;
+		border: none;
+		box-shadow: inset 0 0 3px $lightGrey;
 		border-radius: 60px;
 		color: $black;
 		background: none;
 		height: 60px;
 		width: 60px;
+		transition: ease 0.5s;
+
+		&:hover {
+		box-shadow: inset 0 0 5px $lightGrey;
+		}
 	}
 
 	.nights-number,
@@ -249,11 +257,17 @@ button {
 	color: $green;
 	font-size: 22px;
 	margin-top: 30px;
-	border: 0.5px solid $lightGrey;
+	border: none;
+	box-shadow: inset 0 0 3px $lightGrey;
 	border-radius: 60px;
 	width: 220px;
 	height: 60px;
 	padding: 0 20px;
+	transition: ease 0.5s;
+
+	&:hover {
+	box-shadow: inset 0 0 5px $lightGrey;
+	}
 }
 // Third slide ****************************
 // Location, keywords
@@ -280,7 +294,8 @@ button {
 			position: relative;
 			margin-left: 20px;
 			top: -55px;
-			border: 0.5px solid $lightGrey;
+			border: none;
+			box-shadow: inset 0 0 3px $lightGrey;
 			border-radius: 60px;
 			width: 220px;
 			height: 60px;
@@ -292,6 +307,11 @@ button {
 			cursor: pointer;
 			font-size: 22px;
 			font-family: 'Comfortaa', cursive;
+			transition: ease 0.5s;
+
+			&:hover {
+			box-shadow: inset 0 0 5px $lightGrey;
+			}
 		}
 	}
 }
@@ -301,7 +321,8 @@ button {
 }
 
 .keyword-btn {
-	border: 1px solid $lightGrey;
+	border: none;
+	box-shadow: inset 0 0 3px $lightGrey;
 	color: $lightGrey;
 	width: 120px;
 	height: 40px;
@@ -312,10 +333,12 @@ button {
 	font-weight: 300;
 	margin-right: 2em;
 	margin-bottom: 1em;
+	transition: ease 0.5s;
 
 	&:hover {
 		color: $green;
-		border: 1px solid $green;
+		border: none;
+		box-shadow: inset 0 0 5px $green;
 	}
 }
 // Fourth slide ********************************
@@ -338,7 +361,8 @@ button {
 }
 
 .accom-selection {
-	border: 0.5px solid $lightGrey;
+	border: none;
+	box-shadow: inset 0 0 3px $lightGrey;
 	color: $black;
 	text-align: center;
 	width: 180px;
@@ -349,10 +373,12 @@ button {
 	font-weight: 200;
 	margin-left: 2em;
 	margin-top: 0.9em;
+	transition: ease 0.5s;
 
 	&:hover {
 		color: $green;
-		border: 1px solid $green;
+		border: none;
+		box-shadow: inset 0 0 5px $green;
 	}
 }
 
@@ -364,28 +390,6 @@ button {
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
-}
-
-.check-btn {
-	border: 1px solid $lightGrey;
-	color: $black;
-	height: 60px;
-	width: 60px;
-	background: none;
-	font-size: 22px;
-	font-weight: 200;
-	margin-left: 2em;
-	margin-top: 1em;
-}
-
-.tick:hover {
-	color: $green;
-	border: 1px solid $green;
-}
-
-.cross:hover {
-	color: $red;
-	border: 1px solid $red;
 }
 
 .meal-options {
@@ -402,7 +406,8 @@ button {
 }
 
 .meal-btn {
-	border: 0.5px solid $lightGrey;
+	border: none;
+	box-shadow: inset 0 0 3px $lightGrey;
 	color: $black;
 	background: none;
 	justify-content: center;
@@ -412,15 +417,18 @@ button {
 	margin-right: 1em;
 	font-weight: 200;
 	font-size: 18px;
+	transition: ease 0.5s;
 
 	&:hover {
 		color: $green;
-		border: 0.5px solid $green;
+		border: none;
+		box-shadow: inset 0 0 5px $green;
 	}
 }
 
 .no-meal {
-	border: 0.5px solid $lightGrey;
+	border: none;
+	box-shadow: inset 0 0 3px $lightGrey;
 	color: $black;
 	background: none;
 	justify-content: center;
@@ -430,10 +438,12 @@ button {
 	margin-right: 1em;
 	font-weight: 200;
 	font-size: 18px;
+	transition: ease 0.5s;
 
 	&:hover {
 		color: $red;
-		border: 1px solid $red;
+		border: none;
+		box-shadow: inset 0 0 5px $red;
 	}
 }
 // Fifth Slide *****************************
@@ -569,7 +579,14 @@ h5 {
 
 .clicked {
 	color: $green;
-	border: 1px solid $green;
+	border: none;
+	box-shadow: inset 0 0 3px $green;
+}
+
+.crossed {
+	color: $red;
+	border: none;
+	box-shadow: inset 0 0 3px $red;
 }
 //  Webkits ----------------------------
 // pulse
