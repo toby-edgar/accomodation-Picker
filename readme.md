@@ -84,6 +84,7 @@ $('#lunch').toggle(function() {
   $(this).removeClass('clicked');
 });
 ```
+
 * fullpage.js
 ``` javascript
 $('#fullpage').fullpage({
@@ -102,6 +103,12 @@ $('#fullpage').fullpage({
   easingcss3: 'ease 1s',
 });
 ```
+``` Javascript
+$('#submit').click(function() {
+  $.fn.fullpage.moveSlideRight();
+});
+```
+
 * mapbox
 ``` javascript
 var map = new mapboxgl.Map({
@@ -111,3 +118,21 @@ var map = new mapboxgl.Map({
   zoom: 10 // starting zoom
 });
 ```
+``` Javascript
+var markerA = new mapboxgl.Marker()
+  .setLngLat([174.088046, -35.278908])
+  .addTo(map);
+
+// Fly to
+map.flyTo({
+  center: [
+    174.088046, -35.278908
+  ],
+  zoom: 13,
+  essential: true
+});
+```
+
+<hr>
+
+Thank u x
