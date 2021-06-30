@@ -11,10 +11,38 @@ Accomodation Picker is a web app that is designed to find an accomodation select
 ### Production Tools
 
 #### SCSS
-![scss](img/scssone.png)
-![scss](img/scsstwo.png)
+``` scss
+$black: #2A2B2E;
+$lightGrey: #7E828B;
+$green: #5D976C;
+$blue: #4A81B7;
+$red: #E76A57;
+$background: #E5E5E5;
+```
+``` scss
+.accom-selection {
+	border: 0.5px solid $lightGrey;
+	color: $black;
+	text-align: center;
+	width: 180px;
+	height: 60px;
+	padding: 0 20px;
+	background: none;
+	font-size: 22px;
+	font-weight: 200;
+	margin-left: 2em;
+	margin-top: 0.9em;
+
+	&:hover {
+		color: $green;
+		border: 1px solid $green;
+	}
+}
+```
 
 #### Gulp
+
+<hr>
 
 ### Style guide
 I have followed the principles of the [Idiomatic](https://github.com/rwaldron/idiomatic.js/) style guide to help writing consistant javascript.
