@@ -11,8 +11,8 @@ Accomodation Picker is a web app that is designed to find an accomodation select
 ### Production Tools
 
 #### SCSS
-![scss](img/scss-one.png)
-![scss](img/scss-two.png)
+![scss](img/scssone.png)
+![scss](img/scsstwo.png)
 
 #### Gulp
 
