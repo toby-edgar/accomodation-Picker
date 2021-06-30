@@ -1,4 +1,5 @@
 # Accomodation Picker for Tourism New Zealand
+![accom picker](img/accom-pickr.png)
 Tourism New Zealand is the organisation responsible for marketing New Zealand to the world as a tourist destination. NZ Tourisms’ marketing activity is strategically focused on a number of key markets around the world and a select group of consumers within those key markets. This is so we get the maximum yield for the tourism industry.
 
 Accomodation Picker is a web app that is designed to find an accomodation selection for users who may not have the knowlege to search for thier own accomodation within Aotearoa. The App takes the user through a friendly, personable and trusted questionnaire and asks them about their desired accommodation in Aotearoa and return them with a hand-picked accommodation deal.
@@ -42,9 +43,7 @@ $background: #E5E5E5;
 
 #### Gulp
 
-<hr>
-
-### Style guide
+### Javascript
 I have followed the principles of the [Idiomatic](https://github.com/rwaldron/idiomatic.js/) style guide to help writing consistant javascript.
 
 
