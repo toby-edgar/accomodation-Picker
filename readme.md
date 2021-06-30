@@ -6,6 +6,7 @@ Accomodation Picker is a web app that is designed to find an accomodation select
 *HTML and CSS3 has been validated with the W3S markup validation service.*:white_check_mark: <br>
 *Javascript linting done through gulp.*:white_check_mark:
 
+![Home page](img/ap-homepage.png)
 <hr>
 
 ### Production Tools
@@ -68,9 +69,41 @@ function accomOptions() {
   }
   accomOptions();
 ```
-![Home page](img/ap-homepage.png)
 
 ### Plugins & API
 * jQuery
+``` jquery
+$('#lunch').toggle(function() {
+  $('#noMeals').removeClass('crossed');
+  $(this).addClass('clicked');
+}, function() {
+  $(this).removeClass('clicked');
+});
+```
 * fullpage.js
+``` fullpage
+$('#fullpage').fullpage({
+  menu: '#menu',
+  lockAnchors: true,
+  anchors: ['firstPage', 'secondPage'],
+  showActiveTooltip: true,
+  dragAndMove: false,
+  autoScrolling: true,
+  scrollHorizontally: true,
+  controlArrows: false,
+  keyboardScrolling: false,
+  loopHorizontal: false,
+  horizontalCentered: false,
+  scrollingSpeed: 100,
+  easingcss3: 'ease 1s',
+});
+```
 * mapbox
+``` mapbox
+var map = new mapboxgl.Map({
+  container: 'map', // container id
+  style: 'mapbox://styles/mapbox/streets-v11', // style URL
+  center: [175.553949, -39.235196], // starting position [lng, lat]
+  zoom: 10 // starting zoom
+});
+```
